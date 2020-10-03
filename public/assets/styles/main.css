@@ -1,0 +1,344 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css");
+@import url("./fonts.css");
+@import url("http://fonts.googleapis.com/css?family=Roboto:wght@400;700");
+@import url("http://fonts.googleapis.com/css?family=Montserrat:wght@600;700");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+}
+
+body {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+}
+
+.textBoxIcon {
+  position: relative;
+  color: #333333;
+}
+
+.textBoxIcon i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.textBoxIcon input[type="text"] {
+  padding: 10px;
+  padding-left: calc(30px);
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  outline: none;
+  background: #fdfdfd;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+}
+
+main {
+  max-width: 1641px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+main .weather {
+  width: 1120px;
+  padding: 45px 20px;
+}
+
+main .weather .textBoxIcon {
+  margin-bottom: 40px;
+}
+
+main .weather .textBoxIcon input[type="text"] {
+  max-width: 300px;
+  width: 300px;
+}
+
+@media screen and (max-width: 320px) {
+  main .weather .textBoxIcon input[type="text"] {
+    width: 100%;
+  }
+}
+
+main .weather .weatherForecast {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+main .weather .weatherForecast h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+main .weather .currentConditions {
+  margin-bottom: 40px;
+}
+
+main .weather .currentConditions h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+main .weather .currentConditions nav {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+main .weather .currentConditions nav > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+main .weather .currentConditions nav a {
+  text-decoration: none;
+  position: relative;
+  padding: 10px 15px;
+  margin-right: 10px;
+}
+
+main .weather .currentConditions nav a.active::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  background: #333333;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+}
+
+main .weather .currentConditions nav::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #efefef;
+  bottom: 0;
+  left: 0;
+}
+
+main .weather .logoAccuWeather img {
+  height: 70px;
+}
+
+@media screen and (max-width: 1070px) {
+  main .weather {
+    width: 100%;
+  }
+}
+
+.weatherForecast .box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.weatherForecast .box > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.weatherForecast .box .card {
+  scroll-snap-align: start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 40px;
+  width: calc((1070px - (40px * (4 - 1))) / 4);
+}
+
+.weatherForecast .box .card:last-child {
+  margin-right: 0;
+}
+
+.weatherForecast .box .card {
+  height: 310px;
+  cursor: pointer;
+}
+
+.weatherForecast .box .card .img {
+  height: 285px;
+  border-radius: 10px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.weatherForecast .box .card .img .temperature {
+  padding: 8px 20px;
+  background: #fdfdfd;
+  border: 1px solid #efefef;
+  position: absolute;
+  border-radius: 15px 15px 0 15px;
+  bottom: 0;
+  right: 0;
+}
+
+.weatherForecast .box .card .img .temperature i {
+  color: #ffee00;
+  font-size: 20px;
+  position: absolute;
+  right: 12px;
+  top: -12px;
+}
+
+.weatherForecast .box .card .img .temperature .temperatureNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.weatherForecast .box .card .img .temperature .temperatureNumber span {
+  font-size: 15px;
+}
+
+.weatherForecast .box .card.plus {
+  height: 285px;
+  background: #fdfdfd;
+  border: 1px solid #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+}
+
+.weatherForecast .box .card.plus i {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.weatherForecast .box .card:nth-child(1) .img {
+  background-image: url("../images/saoPaulo.jpg");
+}
+
+.weatherForecast .box .card:nth-child(2) .img {
+  background-image: url("../images/londres.jpeg");
+}
+
+.weatherForecast .box .card:nth-child(3) .img {
+  background-image: url("../images/canada.jpg");
+}
+
+.weatherForecast .box .card > p {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.currentConditions .box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.currentConditions .box > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.currentConditions .box .card {
+  scroll-snap-align: start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 40px;
+  width: calc((1070px - (40px * (6 - 1))) / 6);
+}
+
+.currentConditions .box .card:last-child {
+  margin-right: 0;
+}
+
+.currentConditions .box .card {
+  text-align: center;
+  background: #fdfdfd;
+  border: solid 1px #efefef;
+  border-radius: 10px;
+}
+
+.currentConditions .box .card > * {
+  margin: 10px 0;
+}
+
+.currentConditions .box .card > p {
+  font-size: 15px;
+  opacity: .9;
+}
+
+.currentConditions .box .card > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.currentConditions .box .card > div p {
+  font-size: 18px;
+}
+
+.currentConditions .box .card > div span {
+  font-size: 15px;
+  margin-top: 1px;
+}
+
+.currentConditions .box .card i {
+  font-size: 72px;
+  color: #333333;
+}
+/*# sourceMappingURL=main.css.map */

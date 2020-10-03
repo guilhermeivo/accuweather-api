@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'iconWeather';
+    src:  url('../fonts/iconWeather.eot?t8x0f2');
+    src:  url('../fonts/iconWeather.eot?t8x0f2#iefix') format('embedded-opentype'),
+        url('../fonts/iconWeather.ttf?t8x0f2') format('truetype'),
+        url('../fonts/iconWeather.woff?t8x0f2') format('woff'),
+        url('../fonts/iconWeather.svg?t8x0f2#iconWeather') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+  
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'iconWeather' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    color: #f1c40f;
+}
+  
+.icon-cloudy-foggy::before {
+    content: "\e900";
+}
+.icon-cloudy-rainy::before {
+    content: "\e901";
+}
+.icon-cloudy-snowy::before {
+    content: "\e902";
+}
+.icon-cloudy::before {
+    content: "\e903";
+}
+.icon-partly-cloudy--Moon::before {
+    content: "\e904";
+}
+.icon-partly-cloudy-rainy::before {
+    content: "\e905";
+}
+.icon-partly-cloudy::before {
+    content: "\e906";
+}
+.icon-rainbow::before {
+    content: "\e907";
+}
+.icon-rainy::before {
+    content: "\e908";
+}
+.icon-sunny-foggy::before {
+    content: "\e909";
+}
+.icon-sunny::before {
+    content: "\e90a";
+}
+  .icon-thunder::before {
+    content: "\e90b";
+}
+  

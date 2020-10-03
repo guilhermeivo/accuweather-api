@@ -1,0 +1,316 @@
+$color-background: #ffffff;
+$color-primary: #fdfdfd;
+$color-primary-dark: #efefef;
+$color-text: #333333;
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css");
+@import url("./fonts.css");
+
+@mixin google-font($family) {
+    @import url("http://fonts.googleapis.com/css?family=#{$family}");
+}
+  
+@include google-font("Roboto:wght@400;700");
+@include google-font("Montserrat:wght@600;700");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+    color: $color-text;
+}
+
+body {
+    min-height: 100vh;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: $color-text;
+}
+
+.textBoxIcon {
+    $padding: 10px;
+
+    position: relative;
+    color: $color-text;    
+
+    i {
+        position: absolute;
+        left: $padding;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    input[type="text"] {   
+        padding: $padding;
+        padding-left: calc(#{$padding * 3});
+        font-family: 'Roboto', sans-serif;
+        color: $color-text;
+        outline: none;
+
+        background: $color-primary;
+        border: 1px solid $color-primary-dark;
+        border-radius: 10px;
+    }
+}
+
+main {
+    max-width: 1641px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    .weather {
+        width: 1120px;
+        padding: 45px 20px;
+
+        .textBoxIcon {            
+            margin-bottom: 40px;
+
+            input[type="text"] {
+                max-width: 300px;
+                width: 300px;
+            }
+
+            @media screen and (max-width: 320px) {
+                input[type="text"] {
+                    width: 100%;
+                }
+            }
+        }
+
+        .weatherForecast {
+            h2 {
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .currentConditions {
+            h3 {
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            nav {
+                width: 100%;
+                position: relative;               
+                overflow: hidden;
+
+                >div {
+                    display: flex;
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    scroll-snap-type: x mandatory;
+                    scroll-behavior: smooth;      
+                }
+
+                a {
+                    text-decoration: none;
+                    position: relative;
+                    padding: 10px 15px;
+                    margin-right: 10px;
+
+                    &.active::before {
+                        content: '';
+                        position: absolute;
+                        height: 3px;
+                        background: #333333;
+                        bottom: -1px;
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+
+                margin-bottom: 20px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background: $color-primary-dark;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+
+            margin-bottom: 40px;
+        }
+
+        .logoAccuWeather {
+            img {
+                height: 70px;
+            }            
+        }
+    }
+
+    @media screen and (max-width: 1070px) {
+        .weather {
+            width: 100%;
+        }
+    }
+}
+
+@mixin cardsBox($cardsPreview, $cardsMargin) {
+    overflow: hidden;
+
+    >div {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;        
+    }
+
+    .card {
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        margin-right: $cardsMargin;
+        width: calc((1070px - (#{$cardsMargin} * (#{$cardsPreview} - 1))) / #{$cardsPreview});
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.weatherForecast {    
+    .box {     
+        width: 100%;
+
+        @include cardsBox(4, 40px);
+
+        .card {
+            height: 310px;
+            cursor: pointer;
+
+            .img {
+                height: 285px;
+                border-radius: 10px;
+                position: relative;
+
+                background-size: cover;
+                background-position: center;
+    
+                .temperature {
+                    padding: 8px 20px;
+                    background: $color-primary;
+                    border: 1px solid $color-primary-dark; 
+                    position: absolute;   
+                    border-radius: 15px 15px 0 15px;
+                    bottom: 0;
+                    right: 0;
+    
+                    i {
+                        color: #ffee00;
+                        font-size: 20px;
+                        position: absolute;
+                        right: 12px;
+                        top: -12px;
+                    }
+
+                    .temperatureNumber {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        span {
+                            font-size: 15px;
+                        }
+                    }                    
+                }
+            }
+
+
+            &.plus {
+                height: 285px;
+                background: $color-primary;
+                border: 1px solid $color-primary-dark;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                border-radius: 10px;
+
+                i {
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                }  
+            }
+
+            &:nth-child(1) .img {
+                background-image: url('../images/saoPaulo.jpg');
+            }
+
+            &:nth-child(2) .img{
+                background-image: url('../images/londres.jpeg');
+            }
+    
+            &:nth-child(3) .img{
+                background-image: url('../images/canada.jpg');
+            }
+
+            >p {
+                margin-top: 5px;
+                text-align: center;                
+            }            
+        }      
+    }
+}
+
+
+.currentConditions {    
+    .box {     
+        width: 100%;
+
+        @include cardsBox(6, 40px);
+
+        .card {
+            text-align: center;
+            background: $color-primary;
+            border: solid 1px $color-primary-dark;   
+            border-radius: 10px;
+            
+            >* {
+                margin: 10px 0;
+            }
+
+            >p {
+                font-size: 15px;
+                opacity: .9;
+            }
+
+            >div {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+
+                p {
+                    font-size: 18px;
+                }
+
+                span {
+                    font-size: 15px;
+                    margin-top: 1px;
+                }
+            }
+
+            i {                
+                font-size: 72px;
+                color: $color-text;
+            }
+        }      
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <title>Weather</title>
+</head>
+<body>
+    <main>
+        <div class="weather">
+            <div class="textBoxIcon">
+                <label for="search">
+                    <i class="fas fa-search"></i>
+                </label>                
+                <input type="text" id="search" placeholder="Search" autocomplete="off" />
+            </div>
+            <div class="weatherForecast">
+                <h2>Weather Forecast</h2>
+
+                <div class="box">
+                    <div id="boxHeadline">
+                        <div class="card">
+                            <div class="img">
+                                <div class="temperature">
+                                    <div>
+                                        <i class="icon-sunny"></i>
+                                    </div>
+                                    <div class="temperatureNumber">
+                                        <p>30,1</p>
+                                        <span>°C</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <b>São Paulo</b>
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="img">
+                                <div class="temperature">
+                                    <div>
+                                        <i class="icon-cloudy"></i>
+                                    </div>
+                                    <div class="temperatureNumber">
+                                        <p>23,7</p>
+                                        <span>°C</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Londres</p>
+                        </div>
+                        <div class="card">
+                            <div class="img">
+                                <div class="temperature">
+                                    <div>
+                                        <i class="icon-sunny"></i>
+                                    </div>
+                                    <div class="temperatureNumber">
+                                        <p>12,5</p>
+                                        <span>°C</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Canada</p>
+                        </div>
+                        <div class="card plus">
+                            <i class="fas fa-plus"></i>
+                            <p>Mais</p>
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+            <div class="currentConditions">
+                <h3>São Paulo</h3>
+
+                <nav>
+                    <div>
+                        <a href="#" class="active">Hora</a>
+                        <a href="#">Dias</a>
+                        <a href="#">Detalhes</a>
+                    </div>                    
+                </nav>
+
+                <div class="box">
+                    <div id="boxForecast">
+                        
+                    </div>                    
+                </div>
+            </div>
+            <div class="logoAccuWeather">
+                <img src="https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/thumbnail/entry_id/0_1gf4bw2n/def_height/868/def_width/1657/version/100051/type/2/q/100" alt="logoAccuWeather">
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
