@@ -37,8 +37,8 @@ $ git clone https://github.com/guilhermeivo/accuweather-api.git
     <li>Crie uma conta no <a href="https://developer.accuweather.com/">AccuWeather</a>.</li>
     <ul>
         <li>Pegue o código da API.</li>
-        <li>Renomeie o arquivo `.env_sample` para `.env`.</li>
-        <li>Substitua o texto `YOUR_API_KEY_HERE` pelo código da sua API.</li>
+        <li>Renomeie o arquivo <code>.env_sample</code> para <code>.env</code>.</li>
+        <li>Substitua o texto <code>YOUR_API_KEY_HERE</code> pelo código da sua API.</li>
     </ul>
 </ul>
 
