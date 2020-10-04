@@ -36,9 +36,9 @@ $ git clone https://github.com/guilhermeivo/accuweather-api.git
     <li>Para este projeto é necessário ter instalado em sua maquina o <a href="https://nodejs.org/en/">NodeJs</a>.</li>
     <li>Crie uma conta no <a href="https://developer.accuweather.com/">AccuWeather</a>.</li>
     <ul>
-        <li>Pegue o código da API.</li>
-        <li>Renomeie o arquivo <code>.env_sample</code> para <code>.env</code>.</li>
-        <li>Substitua o texto <code>YOUR_API_KEY_HERE</code> pelo código da sua API.</li>
+        <li>Pegue o código da API;</li>
+        <li>Renomeie o arquivo <code>.env_sample</code> para <code>.env</code>;</li>
+        <li>Substitua o texto <code>YOUR_API_KEY_HERE</code> no arquivo .env pelo código da API.</li>
     </ul>
 </ul>
 
