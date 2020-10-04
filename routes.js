@@ -17,7 +17,7 @@ app.get('/api/geoposition', async (request, response, next) => {
         'q': query.q,
         'language': query.language,
         'details': false,
-        'toplevel': true        
+        'toplevel': true
     }
 
     let url = `${baseUrl}locations/v1/cities/geoposition/search?apikey=${queries.apikey}&q=${queries.q}&language=${queries.language}&details=${queries.details}&toplevel=${queries.toplevel}`;
