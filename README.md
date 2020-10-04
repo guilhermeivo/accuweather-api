@@ -29,7 +29,7 @@ $ git clone https://github.com/guilhermeivo/accuweather-api.git
 
 ### :wrench: Configurando o ambiente
 
-Para este projeto é necessário ter instalado em sua maquina o <a hrfe="https://nodejs.org/en/">NodeJs</a>
+Para este projeto é necessário ter instalado em sua maquina o <a href="https://nodejs.org/en/">NodeJs</a>
 
 
 ### :computer: Rodando o projeto
