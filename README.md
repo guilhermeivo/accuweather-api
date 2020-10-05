@@ -5,7 +5,7 @@
 # :cloud: AccuWeather Api
 
 <div align="center">
-    <img src="https://github.com/guilhermeivo/accuweather-api/tree/master/.github/pageWeather.JPG" alt"pageWeather" title="pageWeather" />
+    <img src="https://github.com/guilhermeivo/accuweather-api/blob/master/.github/pageWeather.JPG" alt"pageWeather" title="pageWeather" />
 </div>
 
 # :scroll: Sumário
