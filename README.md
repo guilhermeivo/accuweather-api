@@ -2,6 +2,12 @@
     <h1>:warning: EM DESENVOLVIMENTO :warning:</h1>
 </div>
 
+# :cloud: AccuWeather Api
+
+<div align="center">
+    <img src="https://github.com/guilhermeivo/accuweather-api/tree/master/.github/pageWeather.JPG" alt"pageWeather" title="pageWeather" />
+</div>
+
 # :scroll: Sumário
 
 - [Tecnologias](#computer-tecnologias)
