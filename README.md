@@ -2,6 +2,8 @@
     <h1>:warning: EM DESENVOLVIMENTO :warning:</h1>
 </div>
 
+<br />
+
 # :cloud: AccuWeather Api
 
 <div align="center">
