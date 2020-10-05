@@ -69,3 +69,8 @@ $ npm start
 ```
 
 Página web e servidor disponível em: http://localhost:3000/.
+
+<!--
+### :wrench: Funcionalidades
+
+-->
