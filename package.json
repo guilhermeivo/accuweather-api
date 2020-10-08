@@ -10,7 +10,7 @@
   "keywords": [
     "weather"
   ],
-  "author": "Guilherme Ivo Bozi",
+  "author": "Guilherme Ivo",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
