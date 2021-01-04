@@ -28,8 +28,8 @@
 
 - [x] Dados meteroelogicos:
     - [x] previsão de 12 horas
-    - [] previsão de 5 dias
-    - [] condições atuais
+    - [ ] previsão de 5 dias
+    - [ ] condições atuais
 
 ## 🎨 Layout
 
