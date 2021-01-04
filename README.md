@@ -4,20 +4,32 @@
 
 <br />
 
-# :cloud: AccuWeather Api
+## 💻 Sobre o projeto
+
+:cloud: AccuWeather API - aplicativo para metereologia.
+
 
 <div align="center">
-    <img src="https://github.com/guilhermeivo/accuweather-api/blob/master/.github/pageWeather.JPG" alt"pageWeather" title="pageWeather" />
+    <img src="https://github.com/guilhermeivo/accuweather-api/blob/master/.github/pageWeather.JPG" alt="pageWeather" title="pageWeather" />
 </div>
 
 # :scroll: Sumário
 
+- [Funcionalidades](#⚙️-Funcionalidades)
+- [Layout](#🎨-Layout)
 - [Tecnologias](#computer-tecnologias)
 - [Como rodar o projeto](#construction_worker-como-rodar-o-projeto)
     - [Baixando o projeto](#computer-baixando-o-projeto)
     - [Configurando o projeto](#wrench-configurando-o-ambiente)
     - [Rodando o projeto](#computer-rodando-o-projeto)
         - [Projeto](#Projeto)
+
+## ⚙️ Funcionalidades
+
+- [x] Dados meteroelogicos:
+    - [x] previsão de 12 horas
+    - [] previsão de 5 dias
+    - [] condições atuais
 
 # :computer: Tecnologias
 
@@ -50,9 +62,6 @@ $ git clone https://github.com/guilhermeivo/accuweather-api.git
     </ul>
 </ul>
 
-
-
-
 ### :computer: Rodando o projeto
 
 #### Projeto
@@ -69,8 +78,3 @@ $ npm start
 ```
 
 Página web e servidor disponível em: http://localhost:3000/.
-
-<!--
-### :wrench: Funcionalidades
-
--->
