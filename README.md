@@ -31,6 +31,14 @@
     - [] previsão de 5 dias
     - [] condições atuais
 
+## 🎨 Layout
+
+O layout da aplicação é:
+
+<div align="center">
+    <img src="https://github.com/guilhermeivo/accuweather-api/blob/master/.github/pageWeather.JPG" alt="pageWeather" title="pageWeather" />
+</div>
+
 # :computer: Tecnologias
 
 Este projeto foi realizado usando as seguintes tecnologias:
