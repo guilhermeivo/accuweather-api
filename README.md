@@ -8,11 +8,6 @@
 
 :cloud: AccuWeather API - aplicativo para metereologia.
 
-
-<div align="center">
-    <img src="https://github.com/guilhermeivo/accuweather-api/blob/master/.github/pageWeather.JPG" alt="pageWeather" title="pageWeather" />
-</div>
-
 # :scroll: Sumário
 
 - [Funcionalidades](#⚙️-Funcionalidades)
