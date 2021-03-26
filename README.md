@@ -8,17 +8,6 @@
 
 :cloud: AccuWeather API - aplicativo para metereologia.
 
-# :scroll: Sumário
-
-- [Funcionalidades](#⚙️-Funcionalidades)
-- [Layout](#🎨-Layout)
-- [Tecnologias](#computer-tecnologias)
-- [Como rodar o projeto](#construction_worker-como-rodar-o-projeto)
-    - [Baixando o projeto](#computer-baixando-o-projeto)
-    - [Configurando o projeto](#wrench-configurando-o-ambiente)
-    - [Rodando o projeto](#computer-rodando-o-projeto)
-        - [Projeto](#Projeto)
-
 ## ⚙️ Funcionalidades
 
 - [x] Dados meteroelogicos:
