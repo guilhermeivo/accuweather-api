@@ -6,14 +6,15 @@
 
 ## 💻 Sobre o projeto
 
-:cloud: AccuWeather API - aplicativo para metereologia.
+:cloud: AccuWeather API - aplicativo para meteorologia.
 
 ## ⚙️ Funcionalidades
 
-- [x] Dados meteroelogicos:
+- [x] Dados meteorologicos:
     - [x] previsão de 12 horas
     - [ ] previsão de 5 dias
     - [ ] condições atuais
+- [ ] Skeleton Screens
 
 ## 🎨 Layout
 
