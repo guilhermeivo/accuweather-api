@@ -10,7 +10,7 @@
 
 ## ⚙️ Funcionalidades
 
-- [x] Dados meteorologicos:
+- [x] Dados meteorológicos:
     - [x] previsão de 12 horas
     - [ ] previsão de 5 dias
     - [ ] condições atuais
